@@ -1,0 +1,27 @@
+{
+  "name": "crypto",
+  "version": "1.0.0",
+  "description": "Landing page for Crypto",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "node-sass sass/main.scss CSS/style.css -w",
+    "start": "npm-run-all --parallel  watch-sass",
+    "compile-sass": "node-sass sass/main.scss CSS/style.comp.css",
+    "prefix-css": "postcss --use autoprefixer -b 'last 10 versions' CSS/style.comp.css -o CSS/style.prefix.css",
+    "compress-css": "node-sass CSS/style.prefix.css CSS/style.css --output-style compressed",
+    "build-css": "npm-run-all compile-sass  prefix-css compress-css"
+  },
+  "author": "oyekanmi",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "concat": "^1.0.3",
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^10.0.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "gsap": "^3.11.0"
+  }
+}
