@@ -72,6 +72,10 @@ a {
 .u-margin-b {
   margin-bottom: 1rem !important; }
 
+@media only screen and (max-width: 37.5em) {
+  .medium {
+    font-size: 2.5rem; } }
+
 .u-margin-t {
   margin-top: 1rem !important; }
 
@@ -98,6 +102,13 @@ a {
 
 .u-big-b {
   margin-bottom: 12rem !important; }
+
+@media only screen and (max-width: 37.5em) {
+  .margin-0 {
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
 .u-small-l {
   margin-left: 2rem; }
@@ -152,6 +163,9 @@ a {
 
 .width-65 {
   width: 65%; }
+  @media only screen and (max-width: 37.5em) {
+    .width-65 {
+      width: 100%; } }
 
 .width-60 {
   width: 60%; }
@@ -203,6 +217,9 @@ a {
 
 .justify {
   justify-content: start; }
+  @media only screen and (max-width: 37.5em) {
+    .justify {
+      justify-content: space-between; } }
 
 .auto {
   margin: 0 auto; }
@@ -216,6 +233,9 @@ a {
 .transform {
   text-transform: none; }
 
+.inline {
+  display: inline-block; }
+
 .About {
   background: url(./../img/Why-CRAPPO.png);
   background-position: center;
@@ -226,7 +246,7 @@ a {
       padding: 40rem 5rem 6rem; } }
   @media only screen and (max-width: 37.5em) {
     .About {
-      padding: 25rem 5rem 6rem; } }
+      padding: 25rem 2rem 6rem; } }
   .About__center {
     justify-content: center; }
   .About__icon {
@@ -259,14 +279,14 @@ a {
   padding: 7rem 0; }
   @media only screen and (max-width: 37.5em) {
     .Features {
-      padding: 7rem 5rem; } }
+      padding: 7rem 2rem; } }
 
 .footer {
   background-color: #0d0d2b;
   padding: 8rem 0; }
   @media only screen and (max-width: 37.5em) {
     .footer {
-      padding: 8rem 7rem; } }
+      padding: 8rem 2rem; } }
   .footer__nav {
     list-style: none; }
   .footer__link, .footer__link:link, .footer__link:hover, .footer__link:active, .footer__link:visited {
@@ -282,10 +302,17 @@ a {
   padding: 1rem 2rem;
   margin: 0 1rem 0 0; }
 
+@media only screen and (max-width: 37.5em) {
+  .socials {
+    width: 30%; } }
+
 .socials__link {
   margin: 0 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .socials__link {
+      margin: 0 1rem; } }
 
-@media only screen and (max-width: 30em) {
+@media only screen and (max-width: 37.5em) {
   .legal {
     display: block; } }
 
@@ -297,7 +324,7 @@ a {
   padding: 5rem 0 8rem; }
   @media only screen and (max-width: 37.5em) {
     .header {
-      padding: 5rem 5rem 8rem; } }
+      padding: 5rem 1rem 8rem; } }
   .header__props {
     margin-top: 10px; }
 
@@ -306,7 +333,6 @@ a {
   @media only screen and (max-width: 50em) {
     .Nav {
       display: block;
-      text-align: center;
       margin: 0;
       visibility: hidden;
       position: fixed;
@@ -314,7 +340,8 @@ a {
       top: 0;
       left: -100%;
       bottom: 0;
-      width: 100%; } }
+      width: 100%;
+      text-align: start !important; } }
   .Nav__brand, .Nav__brand:link, .Nav__brand:hover, .Nav__brand:active, .Nav__brand:visited {
     font-family: "Inter";
     font-style: normal;
@@ -324,23 +351,23 @@ a {
     letter-spacing: 0.04em;
     text-decoration: none;
     text-transform: uppercase;
-    vertical-align: middle; }
+    vertical-align: middle;
+    z-index: 40; }
   .Nav__list {
     list-style: none; }
     @media only screen and (max-width: 50em) {
       .Nav__list {
         display: block;
         position: relative;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%); } }
+        top: 20%;
+        margin: 0 !important;
+        padding: 0 !important; } }
   @media only screen and (max-width: 50em) {
     .Nav__entry {
       position: relative;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      justify-content: center; } }
+      top: 19%;
+      text-align: start !important;
+      display: block; } }
   .Nav__item {
     margin: 2% 20px 0; }
     @media only screen and (max-width: 50em) {
@@ -362,29 +389,42 @@ a {
     align-items: center;
     border-radius: 32px;
     padding: 14px 32px; }
+    @media only screen and (max-width: 50em) {
+      .Nav__register {
+        display: block;
+        background: transparent;
+        padding: 0 20px; } }
   .Nav__login, .Nav__login:link, .Nav__login:hover, .Nav__login:active, .Nav__login:visited {
     text-decoration: none;
     text-transform: capitalize; }
+    @media only screen and (max-width: 50em) {
+      .Nav__login, .Nav__login:link, .Nav__login:hover, .Nav__login:active, .Nav__login:visited {
+        padding: 8px 20px; } }
   .Nav__divider {
     opacity: 0.3;
     border: 1px solid #ffffff;
     height: 25px;
     margin: 0 10px; }
+    @media only screen and (max-width: 50em) {
+      .Nav__divider {
+        display: none; } }
   .Nav__navigation {
-    display: none;
-    z-index: 30; }
+    display: none; }
     @media only screen and (max-width: 50em) {
       .Nav__navigation {
         display: block;
-        position: fixed;
-        top: 40px;
-        right: 40px; } }
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(225, 225, 225, 0.2);
+        padding: 0.2rem 0.2rem 0.2rem 0.6rem;
+        height: 30px;
+        width: 30px;
+        z-index: 30; } }
     .Nav__navigation.active .Nav__button:nth-child(2) {
-      display: none; }
+      opacity: 0; }
     .Nav__navigation.active .Nav__button:nth-child(1) {
-      transform: translateY(1px) rotate(-135deg); }
+      transform: translateY(7px) rotate(-135deg); }
     .Nav__navigation.active .Nav__button:nth-child(3) {
-      transform: translateY(-6px) rotate(135deg); }
+      transform: translateY(-7px) rotate(135deg); }
 
 .show {
   background-color: #0d0d2b;
@@ -392,7 +432,7 @@ a {
   visibility: visible; }
 
 .Nav__button {
-  width: 30px;
+  width: 20px;
   height: 2px;
   background-color: #ffffff;
   margin: 5px 0;
@@ -515,6 +555,9 @@ a {
   background-size: cover;
   padding: 4rem 5rem !important;
   border-radius: 10px; }
+  @media only screen and (max-width: 37.5em) {
+    .start__mining {
+      padding: 4rem 2rem !important; } }
 
 .input__mine {
   display: inline-block;
@@ -522,6 +565,10 @@ a {
   outline: none;
   border-bottom: 1px solid #e0e0e0;
   background-color: transparent; }
+  @media only screen and (max-width: 37.5em) {
+    .input__mine {
+      margin-bottom: 5px;
+      width: 100%; } }
 
 .input__mine::placeholder {
   color: #ffffff; }

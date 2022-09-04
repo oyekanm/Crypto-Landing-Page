@@ -1,6 +1,11 @@
 .u-margin-b {
   margin-bottom: 1rem !important;
 }
+.medium {
+  @include media(phone) {
+    font-size: 2.5rem;
+  }
+}
 .u-margin-t {
   margin-top: 1rem !important;
 }
@@ -29,7 +34,14 @@
 .u-big-b {
   margin-bottom: 12rem !important;
 }
-
+.margin-0 {
+  @include media(phone) {
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .u-small-l {
   margin-left: 2rem;
 }
@@ -83,6 +95,9 @@
 }
 .width-65 {
   width: 65%;
+  @include media(phone) {
+    width: 100%;
+  }
 }
 .width-60 {
   width: 60%;
@@ -136,6 +151,10 @@
 }
 .justify {
   justify-content: start;
+
+  @include media(phone) {
+    justify-content: space-between;
+  }
 }
 .auto {
   margin: 0 auto;
@@ -148,4 +167,7 @@
 }
 .transform {
   text-transform: none;
+}
+.inline {
+  display: inline-block;
 }

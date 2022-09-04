@@ -2,7 +2,7 @@
   background-color: $d-blue;
   padding: 8rem 0;
   @include media(phone) {
-    padding: 8rem 7rem;
+    padding: 8rem 2rem;
   }
 
   &__nav {
@@ -30,12 +30,18 @@
   }
 }
 .socials {
+  @include media(phone) {
+    width: 30%;
+  }
   &__link {
     margin: 0 2rem;
+    @include media(phone) {
+      margin: 0 1rem;
+    }
   }
 }
 .legal {
-  @include media(phone-sm) {
+  @include media(phone) {
     display: block;
   }
 }

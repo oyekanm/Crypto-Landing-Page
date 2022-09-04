@@ -136,6 +136,9 @@
   background-size: cover;
   padding: 4rem 5rem !important;
   border-radius: 10px;
+  @include media(phone) {
+    padding: 4rem 2rem !important;
+  }
 }
 .input__mine {
   display: inline-block;
@@ -143,6 +146,11 @@
   outline: none;
   border-bottom: 1px solid $grey;
   background-color: transparent;
+
+  @include media(phone) {
+    margin-bottom: 5px;
+    width: 100%;
+  }
 }
 
 .input__mine::placeholder {
