@@ -56,9 +56,9 @@ a {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 150%; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 50em) {
     .Repeat__text {
-      font-size: 2rem; } }
+      font-size: 3.2rem; } }
 
 .sample__text {
   font-weight: 700;
@@ -346,9 +346,9 @@ a {
     line-height: 28px;
     letter-spacing: 0.01em;
     text-transform: capitalize; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 50em) {
       .Nav__link, .Nav__link:link, .Nav__link:hover, .Nav__link:active, .Nav__link:visited {
-        font-size: 2rem; } }
+        font-size: 3rem; } }
   .Nav__register {
     background: #3671e9;
     display: flex;

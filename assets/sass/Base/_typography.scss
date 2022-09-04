@@ -35,8 +35,8 @@
   font-weight: 500;
   font-size: $small;
   line-height: 150%;
-  @include media(phone) {
-    font-size: $medium;
+  @include media(tab) {
+    font-size: $large;
   }
 }
 .sample__text {
