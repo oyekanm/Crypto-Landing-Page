@@ -2,7 +2,7 @@
   // width: 100%;
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 
-  @include media(phone) {
+  @include media(tab) {
     display: block;
     text-align: center;
     margin: 0;
@@ -32,7 +32,7 @@
   }
   &__list {
     list-style: none;
-    @include media(phone) {
+    @include media(tab) {
       display: block;
       position: relative;
       top: 45%;
@@ -41,7 +41,7 @@
     }
   }
   &__entry {
-    @include media(phone) {
+    @include media(tab) {
       position: relative;
       top: 40%;
       left: 50%;
@@ -51,6 +51,9 @@
   }
   &__item {
     margin: 2% 20px 0;
+    @include media(tab) {
+      margin: 3% 20px;
+    }
   }
   &__link,
   &__link:link,
@@ -96,7 +99,7 @@
     display: none;
     z-index: 30;
 
-    @include media(phone) {
+    @include media(tab) {
       display: block;
       position: fixed;
       top: 40px;
@@ -124,9 +127,4 @@
   background-color: $white;
   margin: 5px 0;
   transition: all 0.3s ease-in-out;
-}
-.mywidth {
-  @include media(tab) {
-    max-width: 580px !important;
-  }
 }

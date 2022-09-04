@@ -10,9 +10,9 @@ html {
   @include media(desktop) {
     font-size: 50%;
   }
-  @include media(tab) {
-    font-size: 31.25%;
-  }
+  // @include media(tab) {
+  //   font-size: 31.25%;
+  // }
 }
 body {
   font-family: "Rubik", sans-serif !important;

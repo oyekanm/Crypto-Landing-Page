@@ -77,13 +77,16 @@
 }
 .width-75 {
   width: 75%;
+  @include media(phone) {
+    width: 100%;
+  }
 }
 .width-65 {
   width: 65%;
 }
 .width-60 {
   width: 60%;
-  @include media(phone) {
+  @include media(tab) {
     width: 100%;
   }
 }

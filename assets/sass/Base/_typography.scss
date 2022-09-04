@@ -5,21 +5,19 @@
   letter-spacing: 0.01em;
   color: $grey;
   text-transform: capitalize;
-  @include media(phone) {
-    font-size: 3rem;
-  }
-  @include media(sm-phone) {
-    font-size: $medium;
-  }
 }
 
 .Tertiary__text {
   font-weight: 700;
   font-size: $xxlarge;
   line-height: 76px;
-  @include media(phone) {
-    line-height: 30px;
+  @include media(tab-port) {
+    line-height: 50px;
     font-size: 5rem;
+  }
+  @include media(tab) {
+    line-height: 30px;
+    font-size: 4rem;
   }
 }
 .visible__text {
@@ -36,13 +34,17 @@
   font-size: $small;
   line-height: 150%;
   @include media(tab) {
-    font-size: $large;
+    font-size: 2.5rem;
   }
 }
 .sample__text {
   font-weight: 700;
   font-size: $xlarge;
   line-height: 150%;
+
+  @include media(phone) {
+    font-size: 3rem;
+  }
 }
 .input__text {
   font-weight: 400;

@@ -19,9 +19,9 @@
 }
 .top {
   margin-top: -20px !important;
-  @include media(phone) {
-    width: 75%;
-    margin: 0 auto !important;
+  @include media(tab) {
+    width: 75% !important;
+    margin: 30px auto 0 !important;
   }
 }
 .Crypto {
@@ -30,6 +30,11 @@
   background-size: cover;
   height: 450px;
   padding: 10rem 0;
+
+  @include media(phone) {
+    height: auto;
+    padding: 6rem 0 15rem;
+  }
 
   &__calculate {
     background: $white;
@@ -40,7 +45,9 @@
     text-align: start;
     margin-top: -12rem;
     @include media(phone) {
-      width: 90%;
+      width: 95%;
+      padding: 4rem 2rem;
+      margin-top: -5rem;
     }
   }
 
@@ -48,11 +55,21 @@
     border: none;
     outline: none;
     border-bottom: 1px solid $grey;
+
+    @include media(phone) {
+      margin-right: 5px;
+    }
   }
   &__select {
     border: none;
     outline: none;
     border-bottom: 1px solid $grey;
+
+    @include media(phone) {
+      margin-right: 5px;
+      margin-bottom: -5px;
+      width: 20%;
+    }
   }
 }
 .acr {
@@ -66,14 +83,12 @@
   width: 28% !important;
   margin: 0 auto;
   background: #ffffff;
-  height: 380px;
+  height: 450px;
   box-shadow: 0px 0px 40px rgba(57, 23, 119, 0.1);
   border-radius: 16px;
   color: $d-blue;
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-  @media only screen and (min-width: 800px) {
-    height: 450px;
-  }
+
   @include media(phone) {
     width: 80% !important;
     margin-bottom: 3rem;
