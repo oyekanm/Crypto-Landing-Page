@@ -1,0 +1,52 @@
+.Primary__text {
+  font-weight: 400;
+  font-size: $xsmall;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: $grey;
+  text-transform: capitalize;
+  @include media(phone) {
+    font-size: 3rem;
+  }
+  @include media(sm-phone) {
+    font-size: $medium;
+  }
+}
+
+.Tertiary__text {
+  font-weight: 700;
+  font-size: $xxlarge;
+  line-height: 76px;
+  @include media(phone) {
+    line-height: 30px;
+    font-size: 5rem;
+  }
+}
+.visible__text {
+  font-weight: 500;
+  font-size: $xsmall;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  @include media(phone) {
+    font-size: $medium;
+  }
+}
+.Repeat__text {
+  font-weight: 500;
+  font-size: $small;
+  line-height: 150%;
+  @include media(phone) {
+    font-size: $medium;
+  }
+}
+.sample__text {
+  font-weight: 700;
+  font-size: $xlarge;
+  line-height: 150%;
+}
+.input__text {
+  font-weight: 400;
+  font-size: $medium;
+  line-height: 150%;
+  color: $d-blue;
+}

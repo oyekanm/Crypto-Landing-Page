@@ -1,0 +1,41 @@
+.footer {
+  background-color: $d-blue;
+  padding: 8rem 0;
+  @include media(phone) {
+    padding: 8rem 7rem;
+  }
+
+  &__nav {
+    list-style: none;
+  }
+
+  &__link,
+  &__link:link,
+  &__link:hover,
+  &__link:active,
+  &__link:visited {
+    font-weight: 400;
+    font-size: $small;
+    line-height: 38px;
+    color: #f2f2f2;
+    text-decoration: none;
+  }
+}
+.payment {
+  &__span {
+    background-color: rgba(224, 224, 224, 0.1);
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    margin: 0 1rem 0 0;
+  }
+}
+.socials {
+  &__link {
+    margin: 0 2rem;
+  }
+}
+.legal {
+  @include media(phone-sm) {
+    display: block;
+  }
+}

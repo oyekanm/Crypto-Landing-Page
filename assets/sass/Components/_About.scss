@@ -1,0 +1,19 @@
+.About {
+  background: url(./../img/Why-CRAPPO.png);
+  background-position: center;
+  background-size: cover;
+  padding: 10rem 0;
+  @include media(phone) {
+    padding: 15rem 5rem 10rem;
+  }
+
+  &__center {
+    justify-content: center;
+  }
+  &__icon {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    padding: 12px;
+    margin-right: 2rem;
+  }
+}

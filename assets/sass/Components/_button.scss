@@ -1,0 +1,17 @@
+.bttn,
+.bttn:link,
+.bttn:hover,
+.bttn:active,
+.bttn:visited {
+  background: $blue;
+  border-radius: 32px;
+  padding: 16px 30px;
+  text-decoration: none;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.bttn-span {
+  background-color: $white !important;
+  color: $blue;
+  padding: 5px 8px;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}

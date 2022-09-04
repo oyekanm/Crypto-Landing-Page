@@ -4,11 +4,11 @@
   "description": "Landing page for Crypto",
   "main": "index.js",
   "scripts": {
-    "watch-sass": "node-sass sass/main.scss CSS/style.css -w",
+    "watch-sass": "node-sass assets/sass/main.scss assets/CSS/style.css -w",
     "start": "npm-run-all --parallel  watch-sass",
-    "compile-sass": "node-sass sass/main.scss CSS/style.comp.css",
-    "prefix-css": "postcss --use autoprefixer -b 'last 10 versions' CSS/style.comp.css -o CSS/style.prefix.css",
-    "compress-css": "node-sass CSS/style.prefix.css CSS/style.css --output-style compressed",
+    "compile-sass": "node-sass assets/sass/main.scss assets/CSS/style.comp.css",
+    "prefix-css": "postcss --use autoprefixer -b 'last 10 versions' assets/CSS/style.comp.css -o assets/CSS/style.prefix.css",
+    "compress-css": "node-sass assets/CSS/style.prefix.css assets/CSS/style.css --output-style compressed",
     "build-css": "npm-run-all compile-sass  prefix-css compress-css"
   },
   "author": "oyekanmi",

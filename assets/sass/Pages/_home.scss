@@ -1,0 +1,135 @@
+.info {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 365px;
+  padding: 0 10px 0 5px;
+
+  @include media(phone) {
+    width: 100%;
+  }
+
+  span {
+    background: #ffffff;
+    border-radius: 32px;
+    padding: 10px 15px;
+  }
+}
+.top {
+  margin-top: -20px !important;
+  @include media(phone) {
+    width: 75%;
+    margin: 0 auto !important;
+  }
+}
+.Crypto {
+  background: url(./../img/BG.png);
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  padding: 10rem 0;
+
+  &__calculate {
+    background: $white;
+    box-shadow: 0px 80px 40px rgba(57, 26, 116, 0.1);
+    border-radius: 20px;
+    width: 70%;
+    padding: 4rem 7rem;
+    text-align: start;
+    margin-top: -12rem;
+    @include media(phone) {
+      width: 90%;
+    }
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $grey;
+  }
+  &__select {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $grey;
+  }
+}
+.acr {
+  font-weight: 500;
+  font-size: $small;
+  line-height: 150%;
+  color: $neut-grey-2;
+}
+.cards {
+  padding: 42px 15px !important;
+  width: 28% !important;
+  margin: 0 auto;
+  background: #ffffff;
+  height: 380px;
+  box-shadow: 0px 0px 40px rgba(57, 23, 119, 0.1);
+  border-radius: 16px;
+  color: $d-blue;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  @media only screen and (min-width: 800px) {
+    height: 450px;
+  }
+  @include media(phone) {
+    width: 80% !important;
+    margin-bottom: 3rem;
+  }
+  &.card__active .no-display {
+    display: block;
+  }
+  &.card__active .arrow {
+    display: none;
+  }
+}
+// .cards:hover {
+//   background: #2b076e;
+//   border-radius: 16px;
+//   color: $white;
+// }
+.card__active {
+  background: #2b076e;
+  border-radius: 16px;
+  color: $white;
+}
+
+.no-display {
+  display: none;
+  // opacity: 0;
+}
+.arrow {
+  border: 2px solid rgba(43, 7, 110, 0.2);
+  padding: 5px 8px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.mining {
+  background: url(./../img/Start-mining-now.png);
+  background-position: center;
+  background-size: cover;
+  padding: 6rem 0;
+  @include media(phone) {
+    padding: 6rem 5rem;
+  }
+}
+.start__mining {
+  background: url(./../img/Start-mining.png);
+  background-position: center;
+  background-size: cover;
+  padding: 4rem 5rem !important;
+  border-radius: 10px;
+}
+.input__mine {
+  display: inline-block;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $grey;
+  background-color: transparent;
+}
+
+.input__mine::placeholder {
+  color: $white;
+}

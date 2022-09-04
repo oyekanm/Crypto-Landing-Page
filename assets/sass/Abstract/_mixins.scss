@@ -1,0 +1,41 @@
+// Breakpoints
+
+// sm-phone: 21.9em 350px
+// $phone-sm : 30em   480px ;
+// $phone : 37.5em    600px;
+// $tab : 50em    800px;
+// $tab-port: 65.6em   1050px;
+// $desktop: 75em     1200px;
+
+@mixin media($breakpoint) {
+  @if $breakpoint == sm-phone {
+    @media only screen and (max-width: $sm-phone) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone-sm {
+    @media only screen and (max-width: $phone-sm) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: $phone) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab {
+    @media only screen and (max-width: $tab) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: $tab-port) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: $desktop) {
+      @content;
+    }
+  }
+}

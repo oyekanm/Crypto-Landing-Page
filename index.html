@@ -8,52 +8,421 @@
     <title>Document</title>
 
     <!-- STYLE SHEETS -->
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
+    <!-- FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <header class="header">
-        <nav class="Nav">
-            <div>
-                <a href="#" class="Nav__brand">
-                    <img src="img/Logo.png" alt="" class="Nav__img">
-                    crappo
-                </a>
+        <nav class="container flex mywidth ">
+            <a href="#" class="Nav__brand ">
+                <img src="assets/img/Logo.png" alt="" class="Nav__img">
+                crappo
+            </a>
+            <div class="Nav__navigation ">
+                <div class="Nav__button"></div>
+                <div class="Nav__button"></div>
+                <div class="Nav__button"></div>
             </div>
-            <ul>
-                <li class="Nav__item">
-                    <a href="#" class="Nav__link">products</a>
-                </li>
-                <li class="Nav__item">
-                    <a href="#" class="Nav__link">featurs</a>
-                </li>
-                <li class="Nav__item">
-                    <a href="#" class="Nav__link">about</a>
-                </li>
-                <li class="Nav__item">
-                    <a href="#" class="Nav__link">contact</a>
-                </li>
-            </ul>
-            <div class="Nav__entry">
-                <a href="#" class="Nav__login">
-                    login
-                </a>
-                <a href="#" class="Nav__register">
-                    register
-                </a>
+            <div class="Nav flex ">
+
+                <ul class="Nav__list flex u-big-r">
+                    <li class="Nav__item">
+                        <a href="#" class="Nav__link">products</a>
+                    </li>
+                    <li class="Nav__item">
+                        <a href="#" class="Nav__link">features</a>
+                    </li>
+                    <li class="Nav__item">
+                        <a href="#" class="Nav__link">about</a>
+                    </li>
+                    <li class="Nav__item">
+                        <a href="#" class="Nav__link">contact</a>
+                    </li>
+
+                </ul>
+                <div class="Nav__entry flex text-center">
+                    <a href="#" class="Nav__login Repeat__text">
+                        login
+                    </a>
+                    <span class="Nav__divider"></span>
+                    <a href="#" class="Nav__register Nav__login Repeat__text">
+                        register
+                    </a>
+                </div>
             </div>
         </nav>
-    </header>
 
+        <div class="container header__props">
+            <div class="row">
+                <div class=" col-md-6 u-meduim-t">
+                    <div class="info">
+                        <span class="Repeat__text d-blue">75% SAVE</span>
+                        <p class="Primary__text  white u-margin-t">For the Black Friday weekend</p>
+                    </div>
+                    <p class="Tertiary__text u-small-t">Fastest & secure platform to invest in crypto</p>
+                    <p class="Primary__text u-small-t u-meduim-b">Buy and sell cryptocurrencies, trusted by 10M wallets
+                        with over
+                        $30 billion
+                        in
+                        transactions.</p>
+                    <a href="#" class="bttn Repeat__text ">
+                        Try for FREE
+                        <span class="bttn-span rounded-circle u-small-l">
+                            &#62;
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 top">
+                    <img src="assets/img/Illustration.png" alt=" " class="width-100">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <article class="About ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 flex About__center">
+                        <div class="About__icon">
+
+                            <img src="./assets/img/Bar Chart.png" alt="" class="About__img">
+                        </div>
+                        <div class="u-meduim-t width-230">
+                            <p class="sample__text">
+                                $<span class="span" data-value="30">0</span>B
+                            </p>
+                            <p class="Primary__text">
+                                Digital Currency Exchanged
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 flex About__center">
+                        <div class="About__icon">
+
+                            <img src="./assets/img/Person.png" alt="" class="About__img">
+                        </div>
+                        <div class="u-meduim-t width-230">
+                            <p class="sample__text">
+                                <span class="span" data-value="10">0
+                                </span>M+
+                            </p>
+                            <p class="Primary__text">
+                                Trusted Wallets Investor
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 flex About__center">
+                        <div class="About__icon ">
+
+                            <img src="./assets/img/Earth.png" alt="" class="About__img">
+                        </div>
+                        <div class="u-meduim-t width-230">
+                            <p class="sample__text">
+                                <span class="span" data-value="195">0</span>
+                            </p>
+                            <p class="Primary__text">
+                                Countries Supported
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-big-t row">
+                    <div class="col-md-6">
+                        <img src="./assets/img/Illustrations.png" alt="" class="width-100">
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5 ">
+                        <p class="sample__text">Why you should choose CRAPPO</p>
+                        <p class="Primary__text width-75 u-meduim-b">Experience the next generation cryptocurrency
+                            platform. No
+                            financial
+                            borders, extra fees, and fake reviews.</p>
+                        <a href="#" class="bttn Primary__text ">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="text-center u-xmedium-b ">
+            <div class="Crypto">
+                <div class="container ">
+                    <p class="sample__text">Check how much you can earn</p>
+                    <p class="Primary__text width-50 auto">Let’s check your hash rate to see how much you will earn
+                        today,
+                        Exercitation
+                        veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class=" Crypto__calculate auto ">
+                    <div class="Crypto__form flex">
+                        <input type="text" class="input__text Crypto__input width-35"
+                            placeholder="Enter your hash rate">
+                        <select name="select" class="input__text Crypto__select width-25" id="id">
+                            <option class="input__text" value="TH/s" selected>TH/s</option>
+                            <option class="input__text" value="TH/s">TH/s</option>
+                            <option class="input__text" value="TH/s">TH/s</option>
+                        </select>
+                        <a href="#" class="bttn Repeat__text">calculate</a>
+                    </div>
+                    <div class="u-xmedium-t">
+                        <p class="visible__text blue">ESTIMATED 24 HOUR REVENUE:</p>
+                        <p class="sample__text text-32 d-blue">0.055 130 59 ETH ($1275)</p>
+                        <p class="Primary__text neut-grey">Revenue will change based on mining difficulty and Ethereum
+                            price.
+                        </p>
+                    </div>
+                </div>
+                <div class="u-xmedium-t">
+                    <p class="sample__text d-blue width-75 auto">Trade securely and market the high growth
+                        cryptocurrencies.
+                    </p>
+                    <div class="row u-meduim-t">
+                        <div class="col-md-4 cards ">
+                            <img src="./assets/img/Icon.png " alt="">
+                            <div class="u-meduim-t">
+                                <p class="sample__text text-32 ">Bitcoin <span class="acr">BTC</span></p>
+                                <p class="Primary__text u-meduim-b height">Digital currency in which a record of
+                                    transactions
+                                    is
+                                    maintained.</p>
+                                <a href="#" class="bttn Repeat__text bool no-display ">
+                                    start mining
+                                    <span class="bttn-span rounded-circle u-small-l">
+                                        &#62;
+                                    </span>
+                                </a>
+                                <span class="arrow rounded-circle blue">&#62;</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 cards ">
+                            <img src="./assets/img/Icon (1).png " alt="">
+                            <div class="u-meduim-t">
+                                <p class="sample__text text-32 ">Ethereum <span class="acr">ETH</span></p>
+                                <p class="Primary__text u-meduim-b height">Blockchain technology to create and run
+                                    decentralized digital
+                                    applications.</p>
+                                <a class="bttn Repeat__text bool no-display ">
+                                    start mining
+                                    <span class="bttn-span rounded-circle u-small-l">
+                                        &#62;
+                                    </span>
+                                </a>
+                                <span class="arrow rounded-circle blue">&#62;</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 cards ">
+                            <img src="./assets/img/Icon (2).png  " alt="">
+                            <div class="u-meduim-t">
+                                <p class="sample__text text-32">Litecoin <span class="acr">LTC</span></p>
+                                <p class="Primary__text u-meduim-b height">Cryptocurrency that enables instant payments
+                                    to
+                                    anyone in the
+                                    world.</p>
+                                <a href="#" class="bttn Repeat__text bool no-display ">
+                                    start mining
+                                    <span class="bttn-span rounded-circle u-small-l">
+                                        &#62;
+                                    </span>
+                                </a>
+                                <span class="arrow rounded-circle blue">&#62;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="Features ">
+            <p class="sample__text width-60 transform auto text-center">Market sentiments, portfolio, and run the
+                infrastructure
+                of your
+                choice</p>
+            <div class="container u-xmedium-t">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="sample__text text-32">Invest Smart</p>
+                        <p class="Primary__text  u-meduim-b width-90">Get full statistic information about the behaviour
+                            of
+                            buyers and sellers will help you to make the decision. </p>
+                        <a href="#" class="bttn Primary__text ">learn more</a>
+                    </div>
+                    <div class="col-md-6 top-margin">
+                        <img src="./assets/img/Chart.png" alt="" class="width-100">
+                    </div>
+                </div>
+            </div>
+            <div class="row u-small-r u-xmedium-t">
+
+                <div class="col-md-7 padding-0">
+                    <img src="./assets/img/Statistic.png" alt="" class="width-100">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-4 top-margin">
+                    <p class="sample__text text-32">Detailed Statistics</p>
+                    <p class="Primary__text width-70  u-meduim-b">View all mining related information in realtime, at
+                        any point
+                        at any location and decide which polls you want to mine in.</p>
+                    <a href="#" class="bttn Primary__text ">learn more</a>
+                </div>
+            </div>
+            <div class="container u-xmedium-t">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="sample__text text-32">Grow your profit and track your investments</p>
+                        <p class="Primary__text  u-meduim-b width-90">Use advanced analytical tools. Clear TradingView
+                            charts let
+                            you track current and historical profit investments.</p>
+                        <a href="#" class="bttn Primary__text ">learn more</a>
+                    </div>
+                    <div class="col-md-6 top-margin">
+                        <img src="./assets/img/Table.png" alt="" class="width-100">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="mining">
+            <div class="container start__mining">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="sample__text text-32">Start mining now</p>
+                        <p class="Primary__text width-65 white u-meduim-b">Join now with CRAPPO to get the latest news
+                            and
+                            start
+                            mining now </p>
+                    </div>
+                    <div class="col-md-6 u-meduim-t ">
+                        <input type="email" class="Primary__text input__mine width-55" placeholder="Enter your email">
+                        <a href="#" class="bttn visible__text bttn-span d-blue u-small-l">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row u-xmedium-b">
+                <div class="col-md-3 u-xmedium-b ">
+                    <span class="Nav__brand ">
+                        <img src="assets/img/Logo.png" alt="" class="Nav__img">
+                        crappo
+                    </span>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6">
+                    <p class="Repeat__text text-32">Quick Link</p>
+                    <ul class="footer__nav">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Products
+
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                About
+
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Features
+
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Contact
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6">
+                    <p class="Repeat__text text-32">Resources</p>
+                    <ul class="footer__nav">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Download Whitepapper
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Smart Token
+
+
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Blockchain Explorer
+
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Crypto API
+
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Interest
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 padding-0">
+                    <p class="Repeat__text text-32 ">We accept following payment systems</p>
+                    <div class="payment flex justify">
+                        <div class="payment__span"><img src="./assets/img/Vector.png" alt="" class="height-16 "></div>
+                        <div class="payment__span"> <img src="./assets/img/logos_mastercard.png" alt=""
+                                class="height-16 "> </div>
+                        <div class="payment__span"> <img src="./assets/img/logos_bitcoin.png" alt="" class="height-16 ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex legal">
+                <p class="Primary__text">©2021 CRAPPO. All rights reserved</p>
+                <div class="socials flex">
+                    <a href="#" class="socials__link">
+                        <img src="./assets/img/facebook-f 1.png" alt="">
+                    </a>
+                    <a href="#" class="socials__link">
+                        <img src="./assets/img/instagram 1.png" alt="">
+                    </a>
+                    <a href="#" class="socials__link">
+                        <img src="./assets/img/youtube 1.png" alt="">
+                    </a>
+                    <a href="#" class="socials__link">
+                        <img src="./assets/img/twitter 1.png" alt="">
+                    </a>
+                    <a href="#" class="socials__link">
+                        <img src="./assets/img/linkedin 1.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="index.js"></script>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
