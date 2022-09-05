@@ -328,6 +328,9 @@ a {
   .header__props {
     margin-top: 10px; }
 
+.fast {
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); }
+
 .Nav {
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
   @media only screen and (max-width: 50em) {
@@ -415,9 +418,9 @@ a {
         display: block;
         border-radius: 50%;
         box-shadow: 0 0 10px rgba(225, 225, 225, 0.2);
-        padding: 0.2rem 0.2rem 0.2rem 0.6rem;
-        height: 30px;
-        width: 30px;
+        padding: 0.6rem 1rem;
+        height: 35px;
+        width: 35px;
         z-index: 30; } }
     .Nav__navigation.active .Nav__button:nth-child(2) {
       opacity: 0; }

@@ -23,5 +23,6 @@
   "dependencies": {
     "aos": "^2.3.4",
     "gsap": "^3.11.0"
-  }
+  },
+  "type": "module"
 }
