@@ -1,13 +1,13 @@
 const tl = gsap.timeline({ defaults: { ease: "power4.inOut", duration: 2 } });
 
-tl.from(".top", { opacity: 0, y: 500, rotate: 360 })
+tl.from(".top", { opacity: 0, y: 500, rotate: 360, duration: 5 }, "-=2")
   .from(
     ".info",
     {
       opacity: 0,
       x: -100,
     },
-    "-=2"
+    "-=2.5"
   )
   .from(
     ".save",
