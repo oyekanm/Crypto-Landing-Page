@@ -356,6 +356,9 @@ a {
     text-transform: uppercase;
     vertical-align: middle;
     z-index: 40; }
+    @media only screen and (max-width: 50em) {
+      .Nav__brand, .Nav__brand:link, .Nav__brand:hover, .Nav__brand:active, .Nav__brand:visited {
+        position: fixed; } }
   .Nav__list {
     list-style: none; }
     @media only screen and (max-width: 50em) {
