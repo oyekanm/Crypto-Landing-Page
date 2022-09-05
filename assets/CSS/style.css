@@ -474,6 +474,9 @@ a {
     .Crypto {
       height: auto;
       padding: 6rem 0 15rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .Crypto__form {
+      display: block; } }
   .Crypto__calculate {
     background: #ffffff;
     box-shadow: 0px 80px 40px rgba(57, 26, 116, 0.1);
@@ -493,16 +496,16 @@ a {
     border-bottom: 1px solid #e0e0e0; }
     @media only screen and (max-width: 37.5em) {
       .Crypto__input {
-        margin-right: 5px; } }
+        width: 90%;
+        margin: 10px; } }
   .Crypto__select {
     border: none;
     outline: none;
     border-bottom: 1px solid #e0e0e0; }
     @media only screen and (max-width: 37.5em) {
       .Crypto__select {
-        margin-right: 5px;
-        margin-bottom: -5px;
-        width: 20%; } }
+        width: 90%;
+        margin: 10px; } }
 
 .acr {
   font-weight: 500;
@@ -575,3 +578,7 @@ a {
 
 .input__mine::placeholder {
   color: #ffffff; }
+
+.calculate {
+  margin-top: 20px;
+  display: inline-block; }
