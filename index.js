@@ -56,18 +56,34 @@ cards.forEach((card) => {
     card.classList.remove("card__active");
   });
 });
-
 const duration = 5000;
-span.forEach((item) => {
-  let startValue = 0;
-  const data = parseInt(item.getAttribute("data-value"));
-  const time = Math.floor(duration / data);
 
-  const interval = setInterval(() => {
-    startValue += 1;
-    item.textContent = startValue;
-    if (startValue === data) {
-      clearInterval(interval);
+let options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 1.0,
+};
+
+let myInterval = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      let startValue = 0;
+      const item = entry.target;
+      const data = parseInt(item.getAttribute("data-value"));
+      const time = Math.floor(duration / data);
+
+      let interval = setInterval(() => {
+        startValue += 1;
+        item.textContent = startValue;
+        if (startValue === data) {
+          clearInterval(interval);
+        }
+      }, [time]);
     }
-  }, [time]);
+  });
+};
+
+let observer = new IntersectionObserver(myInterval, options);
+span.forEach((span) => {
+  observer.observe(span);
 });
