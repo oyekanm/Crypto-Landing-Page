@@ -340,6 +340,18 @@ a {
 .fast {
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); }
 
+@media only screen and (max-width: 50em) {
+  nav {
+    background-color: #0d0d2b;
+    position: fixed;
+    padding: 15px;
+    max-width: 100% !important;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 0px 40px rgba(123, 122, 124, 0.5); } }
+
 .Nav {
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
   @media only screen and (max-width: 50em) {
@@ -365,9 +377,6 @@ a {
     text-transform: uppercase;
     vertical-align: middle;
     z-index: 40; }
-    @media only screen and (max-width: 50em) {
-      .Nav__brand, .Nav__brand:link, .Nav__brand:hover, .Nav__brand:active, .Nav__brand:visited {
-        position: fixed; } }
   .Nav__list {
     list-style: none; }
     @media only screen and (max-width: 50em) {
@@ -428,8 +437,6 @@ a {
     @media only screen and (max-width: 50em) {
       .Nav__navigation {
         display: block;
-        position: fixed;
-        right: 40px;
         border-radius: 50%;
         box-shadow: 0 0 10px rgba(225, 225, 225, 0.2);
         padding: 0.6rem 1rem;
@@ -464,6 +471,9 @@ a {
   align-items: center;
   width: 365px;
   padding: 0 10px 0 5px; }
+  @media only screen and (max-width: 50em) {
+    .info {
+      margin-top: 10px; } }
   @media only screen and (max-width: 37.5em) {
     .info {
       width: 100%; } }

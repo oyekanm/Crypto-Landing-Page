@@ -1,3 +1,17 @@
+nav {
+  @include media(tab) {
+    background-color: $d-blue;
+    position: fixed;
+    padding: 15px;
+    max-width: 100% !important;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 0px 40px rgba(123, 122, 124, 0.5);
+  }
+}
+
 .Nav {
   // width: 100%;
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
@@ -31,9 +45,9 @@
     vertical-align: middle;
     z-index: 40;
 
-    @include media(tab) {
-      position: fixed;
-    }
+    // @include media(tab) {
+    //   position: fixed;
+    // }
   }
   &__list {
     list-style: none;
@@ -116,9 +130,9 @@
 
     @include media(tab) {
       display: block;
-      position: fixed;
+      // position: fixed;
       // top: 40px;
-      right: 40px;
+      // right: 40px;
       border-radius: 50%;
       box-shadow: 0 0 10px rgba(225, 225, 225, 0.2);
       padding: 0.6rem 1rem;

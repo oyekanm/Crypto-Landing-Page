@@ -6,7 +6,9 @@
   align-items: center;
   width: 365px;
   padding: 0 10px 0 5px;
-
+  @include media(tab) {
+    margin-top: 10px;
+  }
   @include media(phone) {
     width: 100%;
   }

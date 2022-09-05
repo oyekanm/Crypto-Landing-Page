@@ -57,6 +57,23 @@ cards.forEach((card) => {
   });
 });
 const duration = 5000;
+function render(info) {
+  let startValue = 0;
+  const item = info.target;
+  const data = parseInt(item.getAttribute("data-value"));
+  const time = Math.floor(duration / data);
+
+  let interval = setInterval(() => {
+    startValue += 1;
+    item.textContent = startValue;
+    if (startValue === data) {
+      clearInterval(interval);
+    }
+  }, [time]);
+}
+// span.forEach((span) => {
+//   render(span);
+// });
 
 let options = {
   root: null,
@@ -67,18 +84,7 @@ let options = {
 let myInterval = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      let startValue = 0;
-      const item = entry.target;
-      const data = parseInt(item.getAttribute("data-value"));
-      const time = Math.floor(duration / data);
-
-      let interval = setInterval(() => {
-        startValue += 1;
-        item.textContent = startValue;
-        if (startValue === data) {
-          clearInterval(interval);
-        }
-      }, [time]);
+      render(entry);
     }
   });
 };
