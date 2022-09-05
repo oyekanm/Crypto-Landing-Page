@@ -435,6 +435,7 @@ a {
         padding: 0.6rem 1rem;
         height: 35px;
         width: 35px;
+        background-color: #0d0d2b;
         z-index: 30; } }
     .Nav__navigation.active .Nav__button:nth-child(2) {
       opacity: 0; }
