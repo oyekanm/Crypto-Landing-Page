@@ -179,6 +179,9 @@ a {
 
 .width-50 {
   width: 50%; }
+  @media only screen and (max-width: 50em) {
+    .width-50 {
+      width: 80%; } }
   @media only screen and (max-width: 37.5em) {
     .width-50 {
       width: 100%; } }
@@ -563,7 +566,7 @@ a {
   background-position: center;
   background-size: cover;
   padding: 6rem 0;
-  margin-top: 0px; }
+  margin-top: -1px; }
   @media only screen and (max-width: 37.5em) {
     .mining {
       padding: 6rem 5rem; } }
