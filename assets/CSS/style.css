@@ -237,6 +237,9 @@ a {
 .inline {
   display: inline-block; }
 
+.hidden {
+  overflow-x: hidden; }
+
 .About {
   background: url(./../img/Why-CRAPPO.png);
   background-position: center;
