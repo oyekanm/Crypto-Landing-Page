@@ -240,7 +240,8 @@ a {
   background: url(./../img/Why-CRAPPO.png);
   background-position: center;
   background-size: cover;
-  padding: 10rem 0; }
+  padding: 10rem 0;
+  margin-top: -2px; }
   @media only screen and (max-width: 50em) {
     .About {
       padding: 40rem 5rem 6rem; } }
@@ -283,7 +284,8 @@ a {
 
 .footer {
   background-color: #0d0d2b;
-  padding: 8rem 0; }
+  padding: 8rem 0;
+  margin-top: -2px; }
   @media only screen and (max-width: 37.5em) {
     .footer {
       padding: 8rem 2rem; } }
@@ -474,7 +476,8 @@ a {
   background-position: center;
   background-size: cover;
   height: 450px;
-  padding: 10rem 0; }
+  padding: 10rem 0;
+  margin-top: -2px; }
   @media only screen and (max-width: 37.5em) {
     .Crypto {
       height: auto;
@@ -555,7 +558,8 @@ a {
   background: url(./../img/Start-mining-now.png);
   background-position: center;
   background-size: cover;
-  padding: 6rem 0; }
+  padding: 6rem 0;
+  margin-top: -2px; }
   @media only screen and (max-width: 37.5em) {
     .mining {
       padding: 6rem 5rem; } }

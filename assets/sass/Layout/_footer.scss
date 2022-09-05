@@ -1,6 +1,7 @@
 .footer {
   background-color: $d-blue;
   padding: 8rem 0;
+  margin-top: -2px;
   @include media(phone) {
     padding: 8rem 2rem;
   }

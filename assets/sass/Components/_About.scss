@@ -3,6 +3,7 @@
   background-position: center;
   background-size: cover;
   padding: 10rem 0;
+  margin-top: -2px;
   @include media(tab) {
     padding: 40rem 5rem 6rem;
   }
