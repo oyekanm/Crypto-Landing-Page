@@ -281,7 +281,7 @@ a {
   background: url(./../img/Features.png);
   background-position: center;
   background-size: cover;
-  padding: 7rem 0; }
+  padding: 9rem 0; }
   @media only screen and (max-width: 37.5em) {
     .Features {
       padding: 7rem 2rem; } }
@@ -563,7 +563,7 @@ a {
   background-position: center;
   background-size: cover;
   padding: 6rem 0;
-  margin-top: -2px; }
+  margin-top: 0px; }
   @media only screen and (max-width: 37.5em) {
     .mining {
       padding: 6rem 5rem; } }
