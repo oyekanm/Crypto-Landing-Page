@@ -375,7 +375,7 @@ a {
     margin: 2% 20px 0; }
     @media only screen and (max-width: 50em) {
       .Nav__item {
-        margin: 3% 20px; } }
+        margin: 6% 20px; } }
   .Nav__link, .Nav__link:link, .Nav__link:hover, .Nav__link:active, .Nav__link:visited {
     text-decoration: none;
     font-weight: 400;
@@ -402,7 +402,7 @@ a {
     text-transform: capitalize; }
     @media only screen and (max-width: 50em) {
       .Nav__login, .Nav__login:link, .Nav__login:hover, .Nav__login:active, .Nav__login:visited {
-        padding: 8px 20px; } }
+        padding: 28px 20px; } }
   .Nav__divider {
     opacity: 0.3;
     border: 1px solid #ffffff;
@@ -416,6 +416,8 @@ a {
     @media only screen and (max-width: 50em) {
       .Nav__navigation {
         display: block;
+        position: fixed;
+        right: 40px;
         border-radius: 50%;
         box-shadow: 0 0 10px rgba(225, 225, 225, 0.2);
         padding: 0.6rem 1rem;
